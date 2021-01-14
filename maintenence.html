@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link href="css/animate.css" rel="stylesheet">
+    <link rel='shortcut icon' href="favicon.ico" type='image/x-icon'/ >
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Bengawan Solo</title>
+    <script>
+        const goBack = () => {
+            window.history.back();
+        }
+    </script>
+    <script>
+        (function($) {          
+            $(document).ready(function(){                    
+                $(window).scroll(function(){                          
+                    if ($(this).scrollTop() > 250 && window.innerWidth > 501 ) {
+                        $('#scrollednav').fadeIn(500);
+                    } else {
+                        $('#scrollednav').fadeOut(500);
+                    }
+                });
+            });
+        })(jQuery);
+        </script>
+    
+        <!-- Show back to top button -->
+        <script>
+            window.addEventListener('scroll', () => {
+                const scrolls = window.scrollY;
+                const bttBtn = document.querySelector('.back-to-top');
+                if(scrolls>500) {
+                    bttBtn.style.opacity = "1";
+                }
+                else {
+                    bttBtn.style.opacity = "0";
+                }
+            })
+        </script>
+    
+        <!-- Hamburger Toggler -->
+        <script>
+            $(document).ready(function () {
+            $(".x-block").click(function () {
+            $(".overlay-menu").fadeToggle(500);
+            $(".top-menu").toggleClass("top-animate");
+            $(".mid-menu").toggleClass("mid-animate");
+            $(".bottom-menu").toggleClass("bottom-animate");
+            });
+        });
+        </script>
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <a href="index.html"><img src="./images/navlogo.png" alt=""></a>
+            <ul>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="maintenence.html">Order</a></li>
+                <li><a href="maintenence.html">About Us</a></li>
+                <li><a href="maintenence.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="scrollednav">
+        <div id="scrollednavlogo"><a href="index.html"><img class="scrollednavlogo" src="./images/logoartwhite.png" width="40px" height="40px"></a></div>
+            <ul class="menu">
+                <li><a href="products.html">Products</a></li>
+                <li><a href="maintenence.html">Order</a></li>
+                <li><a href="maintenence.html">About Us</a></li>
+                <li><a href="maintenence.html">Contact</a></li>
+            </ul>   
+    </div>
+
+    <div id="secondary-scrollednav">
+        <div id="scrollednavlogo"><a href="index.html"><img class="scrollednavlogo" src="./images/logoartwhite.png" width="40px" height="40px"></a></div>
+            <ul class="menu">
+                <li><a href="products.html">Products</a></li>
+                <li><a href="maintenence.html">Order</a></li>
+                <li><a href="maintenence.html">About Us</a></li>
+                <li><a href="maintenence.html">Contact</a></li>
+
+                <div class="x-block">
+                    <a href="javascript:void(0)" class="icon">
+                        <div class="hamburger">
+                            <div class="menui top-menu"></div>
+                            <div class="menui mid-menu"></div>
+                            <div class="menui bottom-menu"></div>
+                        </div>
+                    </a>
+                </div>
+            </ul>   
+    </div>
+
+    <ul class="overlay-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="maintenence.html">Order</a></li>
+        <li><a href="maintenence.html">About Us</a></li>
+        <li><a href="maintenence.html">Contact</a></li>
+    </ul>
+
+    <section class="maintenence-hero">
+        <div class="container grid">
+            <div>
+                <h1 class="secondary-title">Sorry! The page you're looking for is currently under maintenence.</h1>
+                <div class="btn" onclick="goBack()">Return</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer py-5">
+        <div class="container grid grid-3">
+            <div class="footer-copy">
+                <img src="./images/logoartwhite.png" alt="">
+                <p>Copyright &copy; Nick Teo 2021.</p>
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook fa-1x"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-1x"></i></a>
+                    <a href="#"><i class="fab fa-twitter fa-1x"></i></a>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="maintenence.html">Order</a></li>
+                    <li><a href="maintenence.html">About Us</a></li>
+                    <li><a href="maintenence.html">Contact</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li>Contact Number: +65 6794 3728</li>
+                    <li>Daily Operating Hours: 10AM - 8PM</li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link href="css/animate.css" rel="stylesheet">
+    <link rel='shortcut icon' href="favicon.ico" type='image/x-icon'/ >
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/wow.js"></script>
+    <title>Bengawan Solo</title>
+
+    <script>
+        new WOW().init();
+    </script>
+
+    <script>
+    (function($) {          
+        $(document).ready(function(){                    
+            $(window).scroll(function(){                          
+                if ($(this).scrollTop() > 250 && window.innerWidth > 501 ) {
+                    $('#scrollednav').fadeIn(500);
+                } else {
+                    $('#scrollednav').fadeOut(500);
+                }
+            });
+        });
+    })(jQuery);
+    </script>
+
+    <!-- Show back to top button -->
+    <script>
+        window.addEventListener('scroll', () => {
+            const scrolls = window.scrollY;
+            const bttBtn = document.querySelector('.back-to-top');
+            if(scrolls>500) {
+                bttBtn.style.opacity = "1";
+            }
+            else {
+                bttBtn.style.opacity = "0";
+            }
+        })
+    </script>
+
+    <!-- Hamburger Toggler -->
+    <script>
+        $(document).ready(function () {
+        $(".x-block").click(function () {
+        $(".overlay-menu").fadeToggle(500);
+        $(".top-menu").toggleClass("top-animate");
+        $(".mid-menu").toggleClass("mid-animate");
+        $(".bottom-menu").toggleClass("bottom-animate");
+        });
+    });
+    </script>
+</head>
+<body>
+    <div id="top"></div>
+    <div class="navbar">
+        <nav>
+            <a href="index.html"><img src="./images/navlogo.png" alt=""></a>
+            <ul>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="maintenence.html">Order</a></li>
+                <li><a href="maintenence.html">About Us</a></li>
+                <li><a href="maintenence.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="scrollednav">
+        <div id="scrollednavlogo"><a href="index.html"><img class="scrollednavlogo" src="./images/logoartwhite.png" width="40px" height="40px"></a></div>
+            <ul class="menu">
+                <li><a href="products.html">Products</a></li>
+                <li><a href="maintenence.html">Order</a></li>
+                <li><a href="maintenence.html">About Us</a></li>
+                <li><a href="maintenence.html">Contact</a></li>
+            </ul>   
+    </div>
+
+    <div id="secondary-scrollednav">
+        <div id="scrollednavlogo"><a href="index.html"><img class="scrollednavlogo" src="./images/logoartwhite.png" width="40px" height="40px"></a></div>
+            <ul class="menu">
+                <li><a href="products.html">Products</a></li>
+                <li><a href="maintenence.html">Order</a></li>
+                <li><a href="maintenence.html">About Us</a></li>
+                <li><a href="maintenence.html">Contact</a></li>
+
+                <div class="x-block">
+                    <a href="javascript:void(0)" class="icon">
+                        <div class="hamburger">
+                            <div class="menui top-menu"></div>
+                            <div class="menui mid-menu"></div>
+                            <div class="menui bottom-menu"></div>
+                        </div>
+                    </a>
+                </div>
+            </ul>   
+    </div>
+
+    <ul class="overlay-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="maintenence.html">Order</a></li>
+        <li><a href="maintenence.html">About Us</a></li>
+        <li><a href="maintenence.html">Contact</a></li>
+    </ul>
+
+    <section class="about-hero">
+        <div class="container grid">
+            <div>
+                <h1 class="section-title">Endless Selections</h1>
+                <p class="section-paragraph">Choose from our wide range of freshly baked cakes and desserts.</p>
+                <a href="#campaignanchor"><div class="btn">See More</div></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-showcase">
+        <div class="container grid py-5">
+            <div class="showcase-heading">
+                <h1 class="secondary-title">Our Products</h1>
+                <hr>
+            </div>
+            <div class="card wow fadeIn">
+                <p class="lead">Signatures</p>
+                <img src="./images/products/Signatures.jpg" alt="">
+                <p class="section-paragraph">Check out our signature delicacies like the Kueh Lapis, Ondeh Ondeh, Kueh Salat and more.</p>
+                <a href="#campaignanchor"><div class="btn">See More</div></a>
+            </div>
+            <div class="card wow fadeIn">
+                <p class="lead">Kuehs</p>
+                <img src="./images/products/rainbowkueh.jpg" alt="">
+                <p class="section-paragraph">With more than 20 kuehs, each of a unique flavour to select from, you will be spoilt for choice.</p>
+                <a href="#campaignanchor"><div class="btn">See More</div></a>
+            </div>
+            <div class="card wow fadeIn">
+                <p class="lead">Cakes & Rolls</p>
+                <img src="./images/products/cakesandrolls.jpg" alt="">
+                <p class="section-paragraph">Another favourite, done Bengawan Solo style is our Chiffon Cake. Light, spongy, irresistable.</p>
+                <a href="#campaignanchor"><div class="btn">See More</div></a>
+            </div>
+            <div class="card wow fadeIn">
+                <p class="lead">Cookies</p>
+                <img src="./images/products/cookies.jpg" alt="">
+                <p class="section-paragraph">With such irresistible selections of cookies, it's no wonder they disappear so quickly. So hurry!</p>
+                <a href="#campaignanchor"><div class="btn">See More</div></a>
+            </div>
+            <div class="card wow fadeIn">
+                <p class="lead">Celebration</p>
+                <img src="./images/products/celebration.jpg" alt="">
+                <p class="section-paragraph">There's cakes for all your needs, ranging from New Year's to even Christmas, try it today!</p>
+                <a href="#campaignanchor"><div class="btn">See More</div></a>
+            </div>
+            <div class="card wow fadeIn">
+                <p class="lead">Gift Ideas</p>
+                <img src="./images/products/giftideas.jpg" alt="">
+                <p class="section-paragraph">Don't know what to get for someone's birthday? Fret not! We have you covered!</p>
+                <a href="#campaignanchor"><div class="btn">See More</div></a>
+            </div>
+        </div>
+    </section>
+    <a href="#" class="back-to-top">↑</a>
+    
+    <footer class="footer py-5">
+        <div class="container grid grid-3">
+            <div class="footer-copy">
+                <img src="./images/logoartwhite.png" alt="">
+                <p>Copyright &copy; Nick Teo 2021.</p>
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook fa-1x"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-1x"></i></a>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="maintenence.html">Order</a></li>
+                    <li><a href="maintenence.html">About Us</a></li>
+                    <li><a href="maintenence.html">Contact</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li>Contact Number: +65 6794 3728</li>
+                    <li>Daily Operating Hours: 10AM - 8PM</li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    
+</body>
+</html>
