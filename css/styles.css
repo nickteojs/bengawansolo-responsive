@@ -438,7 +438,22 @@ img {
 
 /* Media Queries */
 
-/* LAPTOPS */
+@media (max-width: 2560px) {
+    .about-showcase img {
+        max-height: 277px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .about-showcase img {
+        max-height: 152px;
+    }
+
+    .about-showcase .grid {
+        grid-template-columns: repeat(2, 0.35fr);
+    }
+}
+
 @media (max-width: 1280px) {   
     .index-showcase, .about-showcase {
         height: auto;
@@ -490,13 +505,23 @@ img {
     }
 
     
-/* Maintenence Page */
-.maintenence-hero .grid {
-    grid-template-columns: 0.8fr;
-}
+    /* Maintenence Page */
+    .maintenence-hero .grid {
+        grid-template-columns: 0.8fr;
+    }
 }
 
-/* TABLETS */
+@media (max-width: 1024px) {
+    .index-showcase .grid {
+        grid-template-columns: repeat(3, 0.35fr);
+    }
+
+    .about-showcase .grid {
+        grid-template-columns: repeat(2, 0.4fr);
+    }
+}
+
+
 @media (max-width: 768px) {
 
 /* Index */
@@ -567,6 +592,10 @@ img {
 
 .about-showcase .section-paragraph {
     width: 80%;
+}
+
+.about-showcase img {
+    max-height: 100%;
 }
 
 
@@ -755,9 +784,7 @@ img {
 
     /* About Page */
     .about-hero {
-        box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
         background-position-x: 80%;
-        color: var(--primary-light);
     }
     
     .about-hero .grid {
