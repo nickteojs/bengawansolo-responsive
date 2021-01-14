@@ -199,7 +199,7 @@ img {
     background-image: url(../images/index/headerbg.jpg);
     background-size: cover;
     background-position-y: 50%;
-    color: var(--primary-color);
+    color: var(--primary-light);
     text-align: left;
     box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.05);
 }
@@ -219,7 +219,7 @@ img {
 
 .index-hero .btn {
     font-size: 12px;
-    background-color: var(--primary-color);
+    background-color: var(--primary-light);
     margin-top: 25px;
 }
 
@@ -232,7 +232,7 @@ img {
     height: 100vh;
     text-align: center;
     background-image: url(../images/index/longsectionbg.jpg);
-    color: var(--primary-color);
+    color: var(--primary-light);
     overflow: hidden;
 }
 
@@ -382,7 +382,7 @@ img {
 
 /* Footer */
 .footer {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-light);
     color: white;
     text-align: center;
 }
