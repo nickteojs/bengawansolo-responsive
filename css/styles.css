@@ -200,7 +200,6 @@ img {
     background-position-y: 50%;
     color: var(--hero-light);
     text-align: left;
-    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.05);
 }
 
 .index-hero .container {
@@ -575,15 +574,19 @@ img {
 
 /* About */
 .about-hero {
-    background-position-x: 100%;
+    background-position-x: 10%;
     height: 700px;
-    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
     color: var(--primary-light);
 }
 
 .about-hero .grid {
-    grid-template-columns: 0.8fr;
-    justify-content: center;
+    grid-template-columns: 0.55fr;
+    justify-content: start;
+    text-align: left;
+}
+
+.about-hero .container {
+    max-width: 730px;
 }
 
 .about-hero .section-paragraph {
@@ -750,8 +753,7 @@ img {
 
     /* Index Page */
     .index-hero {
-        box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.65);
-        background-position-x: 50%;
+        background-image: url(../images/index/longsectionbg.jpg);
         color: var(--primary-light);
     }
     
@@ -776,6 +778,8 @@ img {
     .index-showcase {
         height: auto;
         text-align: center;
+        background-image: none;
+        background-color: var(--light-color);
     }
 
     .index-showcase .grid {
@@ -796,7 +800,8 @@ img {
 
     /* About Page */
     .about-hero {
-        background-position-x: 80%;
+        background-image: url(../images/index/longsectionbg.jpg);
+        box-shadow: none;
     }
     
     .about-hero .grid {
@@ -807,6 +812,11 @@ img {
 
     .about-hero .section-paragraph {
         font-size: 18px;
+    }
+
+    .about-showcase {
+        background-image: none;
+        background-color: var(--light-color);
     }
 
     .about-showcase .grid {
