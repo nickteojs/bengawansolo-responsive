@@ -241,6 +241,7 @@ img {
     grid-template-columns: repeat(3, 0.25fr);
     align-items: center;
     padding-top: 120px;
+    padding-bottom: 120px;
     gap: 80px;
 }
 
