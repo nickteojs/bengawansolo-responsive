@@ -229,7 +229,7 @@ img {
 
 /* Index - Showcase */
 .index-showcase {
-    height: 100vh;
+    height: auto;
     text-align: center;
     background-image: url(../images/index/longsectionbg.jpg);
     color: var(--primary-light);
