@@ -382,7 +382,7 @@ img {
 
 /* Footer */
 .footer {
-    background-color: var(--primary-light);
+    background-color: var(--primary-color);
     color: white;
     text-align: center;
 }
@@ -455,6 +455,18 @@ img {
 
     .index-hero .container {
         max-width: 1150px;
+    }
+
+    .index-showcase .grid {
+        padding-bottom: 120px;
+    }
+
+    .index-showcase img {
+        max-height: 170px;
+    }
+
+    .index-showcase .showcase-item .section-paragraph {
+        width: 100%;
     }
 
     .about-showcase .grid {
