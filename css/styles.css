@@ -269,7 +269,7 @@ img {
 }
 
 .index-showcase .showcase-item .section-paragraph {
-    width: 90%;
+    width: 100%;
     margin-bottom: 30px;
 }
 
@@ -530,6 +530,10 @@ img {
 
 .index-showcase .showcase-item .section-paragraph {
     width: 100%;
+}
+
+.index-showcase img {
+    max-height: 100%;
 }
 
 /* About */
