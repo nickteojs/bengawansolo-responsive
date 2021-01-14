@@ -17,8 +17,7 @@ html {
     --primary-color:  #7b2a2a;
     --secondary-color: #581f1f;
     --primary-light: #9c1d1d;
-    --dark-color: #292929;
-    --dark-color2: #474747;
+    --hero-light: #c92828;
     --light-color: #FEFDF8;
 }
 
@@ -199,7 +198,7 @@ img {
     background-image: url(../images/index/headerbg.jpg);
     background-size: cover;
     background-position-y: 50%;
-    color: var(--primary-light);
+    color: var(--hero-light);
     text-align: left;
     box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.05);
 }
@@ -279,7 +278,7 @@ img {
     background-image: url(../images/products/productheader.jpeg);
     background-size: cover;
     background-position-y: 60%;
-    color: var(--primary-light);
+    color: var(--hero-light);
     text-align: left;
     text-align: center;
 }
@@ -453,8 +452,13 @@ img {
     .about-hero .grid {
         grid-template-columns: 0.4fr;
     }
+
     .about-showcase img {
         max-height: 152px;
+    }
+
+    .about-showcase .section-paragraph {
+        width: 90%;
     }
 
     .about-showcase .grid {
