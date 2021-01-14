@@ -523,7 +523,7 @@ img {
 .about-hero {
     background-position-x: 100%;
     height: 700px;
-    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
     color: var(--primary-light);
 }
 
@@ -692,7 +692,7 @@ img {
 
     /* Index Page */
     .index-hero {
-        box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.75);
+        box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.55);
         background-position-x: 50%;
         color: var(--primary-color);
     }
@@ -738,7 +738,7 @@ img {
 
     /* About Page */
     .about-hero {
-        box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+        box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
         background-position-x: 80%;
         color: var(--primary-light);
     }
