@@ -7,7 +7,7 @@
 
 /* Card */
 .card {
-    background-color: var(--primary-color);
+    background-color: var(--primary-light);
     border-radius: 10px;
     box-shadow: 0 1px 5px rgba(0,0,0, 0.2);
     padding: 10px;
@@ -22,7 +22,7 @@
     display: inline-block;
     padding: 15px 30px;
     cursor: pointer;
-    background-color: var(--primary-color);
+    background-color: var(--primary-light);
     color: white;
     transition: 200ms ease-in-out;
     outline: none;
@@ -31,7 +31,7 @@
 }
 
 .btn-primary {
-    background-color: var(--primary-color);
+    background-color: var(--primary-light);
     color: white;
 }
 
