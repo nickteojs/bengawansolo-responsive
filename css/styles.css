@@ -445,6 +445,14 @@ img {
 }
 
 @media (max-width: 1440px) {
+    .index-hero .container,
+    .about-hero .container {
+        max-width: 1350px;
+    }
+
+    .about-hero .grid {
+        grid-template-columns: 0.4fr;
+    }
     .about-showcase img {
         max-height: 152px;
     }
